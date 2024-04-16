@@ -1,4 +1,5 @@
 "use strict";
+
 function triggerBatch(){
   doExtraction();
   doLibraries();
