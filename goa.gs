@@ -34,6 +34,12 @@ function getAccessToken(packageName) {
 
 }
 
+
+function getAccessToken(packageName) {
+  return  cGoa.GoaApp.createGoa(packageName ,getPropertyService()).execute().getToken();
+}
+
+
 const showGoa = () => {
   const goa = cGoa.make(
     'gasgit',
@@ -42,15 +48,15 @@ const showGoa = () => {
   console.log(goa.getPackage())
 }
 
-const killGoa = () => {
 
+const killGoa = () => {
   const goa = cGoa.make(
     'gasgit',
     getPropertyService()
   )
   goa.kill()
-
 }
 
 
-const getPropertyService = () => PropertiesService.getUserProperties()
+const getPropertyService = () => PropertiesService.getUserProperties();
+
