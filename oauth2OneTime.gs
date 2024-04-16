@@ -27,3 +27,24 @@ function oneTimeSetProperties () {
 
 }
 
+function checkProp() {
+  let props = PropertiesService.getUserProperties().getProperties(); //'gasgit', 'clientId'
+  console.log(props);
+  let packageName = 'gasgit';
+  let aaa = cGoa.GoaApp.createGoa(packageName ,getPropertyService()).execute().getToken();
+  console.log(aaa);
+}
+
+function getAccessToken1() {
+  let ggg = cGoa.GoaApp.createGoa('gasgit' ,getPropertyService()).execute();
+  console.log(ggg);
+  let mmm = ggg.hasToken();
+  console.log(mmm);
+  let kkk = ggg.getToken();
+  console.log(kkk);
+}
+
+
+
+
+
