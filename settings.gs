@@ -27,4 +27,3 @@ var SETTINGS = {
 //c5ffb0927f9b0603edfcd67330065818cfedb8ee secret
 //150d72e9c3998030f995 clientid
 
-//"/Published Scripts"
