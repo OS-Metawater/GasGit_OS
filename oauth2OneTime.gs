@@ -27,6 +27,11 @@ function oneTimeSetProperties () {
 
 }
 
+/**
+ * Github token is already stored in Properties
+ * Do not push a project with token exposed - it will lead to token auto kill
+ */
+
 function getToken() {
   let propertyStore = PropertiesService.getUserProperties();
   let token = propertyStore.getProperty('gitToken');
