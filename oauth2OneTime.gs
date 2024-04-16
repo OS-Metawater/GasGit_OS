@@ -12,7 +12,7 @@ function oneTimeSetProperties () {
     const clientId = '150d72e9c3998030f995'
     const clientSecret = 'c5ffb0927f9b0603edfcd67330065818cfedb8ee'
    // used by all using this script
-  var propertyStore = PropertiesService.getUserProperties();
+  let propertyStore = PropertiesService.getUserProperties();
 
   cGoa.GoaApp.setPackage (propertyStore , { 
     clientId,
@@ -25,6 +25,12 @@ function oneTimeSetProperties () {
     packageName: 'gasgit'
   });
 
+}
+
+function getToken() {
+  let propertyStore = PropertiesService.getUserProperties();
+  let token = propertyStore.getProperty('gitToken');
+  return token;
 }
 
 function checkProp() {
