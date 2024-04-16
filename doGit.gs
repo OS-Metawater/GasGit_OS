@@ -22,7 +22,7 @@ function doGit() {
   
   
   // get a git handle
-  var git = new GasGit(extractor).setAccessToken('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');
+  var git = new GasGit(extractor).setAccessToken(getToken());
   // var git = new GasGit(extractor).setAccessToken( getAccessToken('gasgit'));
 
   // get all my repos
