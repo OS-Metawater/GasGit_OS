@@ -1,5 +1,5 @@
 # Google Apps Script Project: GasGit_OS
-This repo (GasGit_OS) was automatically updated on 4/16/2024, 5:42:54 AM by GasGit
+This repo (GasGit_OS) was automatically updated on 4/16/2024, 6:32:48 AM by GasGit
 
 For more information on gasgit, see the [desktop liberation site](https://ramblings.mcpher.com/drive-sdk-and-github/migrategasgit/ "desktop liberation")
 
@@ -20,8 +20,8 @@ GasGit| server_js
 ScriptExtractor| server_js
 doExtraction| server_js
 doLibraries| server_js
-doGit| server_js
 forPublishing| server_js
+doGit| server_js
 goa| server_js
 oauth2OneTime| server_js
 settings| server_js
